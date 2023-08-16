@@ -24,7 +24,7 @@ export default function Blog() {
           ],
         }}
       />
-      <article className="prose container mx-auto p-5">
+      <article className="prose !max-w-screen-md !w-screen-md mx-auto p-5">
         <h1>私について</h1>
         <div className="flex justify-center">
           <Image
