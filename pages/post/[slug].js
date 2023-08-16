@@ -36,7 +36,7 @@ export default function Post({ frontMatter, content, slug }) {
           ],
         }}
       />
-      <article className="prose container mx-auto p-5">
+      <article className="prose !max-w-screen-md !w-screen-md mx-auto p-5" >
         <div>
           <Image
             src={`/${frontMatter.image}`}
