@@ -27,16 +27,16 @@ export default function Header() {
           <summary className="m-1 btn">Menu</summary>
           <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
             <li>
-              <Link href={`/me`}>私について</Link>
+              <Link className="pointer-events-auto" href={`/me`}>私について</Link>
             </li>
             <li>
-              <Link href={`/categories/react`}>React や Javascript</Link>
+              <Link className="pointer-events-auto" href={`/categories/react`}>React や Javascript</Link>
             </li>
             <li>
-              <Link href={`/categories/wp`}>WordPress</Link>
+              <Link className="pointer-events-auto" href={`/categories/wp`}>WordPress</Link>
             </li>
             <li>
-              <Link href={`/categories/blog`}>Blog</Link>
+              <Link className="pointer-events-auto" href={`/categories/blog`}>Blog</Link>
             </li>
           </ul>
         </details>
