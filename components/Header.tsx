@@ -23,23 +23,41 @@ export default function Header() {
             <Link href={`/categories/blog`}>Blog</Link>
           </li>
         </ul>
-        <details className="dropdown dropdown-end block lg:hidden">
-          <summary className="m-1 btn">Menu</summary>
-          <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+        <div className="dropdown dropdown-end block lg:hidden">
+          <label tabIndex={0} className="btn btn-ghost btn-circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16M4 18h7"
+              />
+            </svg>
+          </label>
+          <ul
+            tabIndex={0}
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+          >
             <li>
-              <Link className="pointer-events-auto" href={`/me`}>私について</Link>
+              <Link href={`/me`}>私について</Link>
             </li>
             <li>
-              <Link className="pointer-events-auto" href={`/categories/react`}>React や Javascript</Link>
+              <Link href={`/categories/react`}>React や Javascript</Link>
             </li>
             <li>
-              <Link className="pointer-events-auto" href={`/categories/wp`}>WordPress</Link>
+              <Link href={`/categories/wp`}>WordPress</Link>
             </li>
             <li>
-              <Link className="pointer-events-auto" href={`/categories/blog`}>Blog</Link>
+              <Link href={`/categories/blog`}>Blog</Link>
             </li>
           </ul>
-        </details>
+        </div>
       </div>
     </div>
   );
