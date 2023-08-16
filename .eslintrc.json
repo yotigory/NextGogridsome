@@ -1,3 +1,14 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next",
+    "next/core-web-vitals",
+    "prettier",
+    "next/babel",
+    "plugin:tailwindcss/recommended"
+  ],
+  "plugins": ["tailwindcss"],
+  "rules": {
+    // Static Exportだとnext/imageが使えないためオフ
+    "@next/next/no-img-element": "off"
+  }
 }
